@@ -212,7 +212,7 @@ INNER JOIN (
     SELECT [o].*
     FROM [Orders] AS [o]
     WHERE [o].[OrderID] < 10250
-) AS [t] ON 1 = 1
+) AS [t] ON CAST(1 AS bit) = CAST(1 AS bit)
 WHERE [c].[CustomerID] = N'ALFKI'");
         }
 
